@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from creativelayers.net/themes/educrat-html/home-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 09:33:22 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="user/css/vendors.css">
+  <link rel="stylesheet" href="user/css/main.css">
+
+  <title>Educrat</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+
+    <main class="main-content  ">
+
+      <header data-anim="fade" data-add-bg="" class="header -type-4 -shadow bg-white js-header">
+
+
+        <div class="header__container border-bottom-light py-10">
+          <div class="row justify-between items-center">
+
+            <div class="col-auto">
+              <div class="header-left d-flex items-center">
+
+                <div class="header__logo pr-30 xl:pr-20 md:pr-0">
+                  <a data-barba href="/">
+                    <img src="/user/images/logo/logo_light.png" alt="logo" style="height:60px ;width:100px">
+                  </a>
+                </div>
+
+
+                
+
+                <div class="header-menu js-mobile-menu-toggle pl-30 xl:pl-20">
+                  <div class="header-menu__content">
+                    <div class="mobile-bg js-mobile-bg"></div>
+
+                    <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+                      <a href="/login" class="text-dark-1">Log in</a>
+                      <a href="/signup" class="text-dark-1 ml-30">Sign Up</a>
+                    </div>
+
+                    <div class="menu js-navList">
+                      <ul class="menu__nav text-dark-1 -is-active">
+                       
+                        <li>
+                          <a data-barba href="/">Home</a>
+                        </li>
+                        <li>
+                          <a data-barba href="/courses_list?page=1">Courses</a>
+                        </li>
+                        
+
+                        <li>
+                          <a data-barba href="events.html">Events</a>
+                        </li>
+
+                        <li>
+                          <a data-barba href="blog.html">Blog</a>
+                        </li>
+
+                        <li>
+                          <a data-barba href="contact-1.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                      <div class="mobile-footer__number">
+                        <div class="text-17 fw-500 text-dark-1">Call us</div>
+                        <div class="text-17 fw-500 text-purple-1">800 388 80 90</div>
+                      </div>
+
+                      <div class="lh-2 mt-10">
+                        <div>329 Queensberry Street,<br> North Melbourne VIC 3051, Australia.</div>
+                        <div>hi@educrat.com</div>
+                      </div>
+
+                      <div class="mobile-socials mt-10">
+
+                        <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                          <i class="fa fa-linkedin"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+                    <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                      <div class="icon-close text-dark-1 text-16"></div>
+                    </div>
+                  </div>
+
+                  <div class="header-menu-bg"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-auto">
+              <div class="header-right d-flex items-center">
+                <div class="header-right__icons text-white d-flex items-center">
+                  <div class="header-search-field">
+                    <form action="#">
+                      <div class="header-search-field__group">
+                        <input type="text" placeholder="What do you want to learn?">
+                        <button type="submit">
+                          <i class="icon icon-search"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+
+                 
+
+
+                  <div class="d-none xl:d-block pl-20 sm:pl-15">
+                    <button class="text-dark-1 items-center" data-el-toggle=".js-mobile-menu-toggle">
+                      <i class="text-11 icon icon-mobile-menu"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="header-right__buttons d-flex items-center ml-30 xl:ml-20 lg:d-none">
+                  <a href="/login" class="button -underline text-purple-1">Log in</a>
+                  <a href="/signup" class="button h-50 px-30 -purple-1 -rounded text-white ml-20">Sign up</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+
+      <div class="content-wrapper  js-content-wrapper">
+
+
+        <section data-anim-wrap class="masthead -type-4">
+          <div class="container">
+            <div class="row y-gap-50 justify-center items-center">
+              <div class="col-xl-5 col-lg-6">
+                <div class="masthead__content">
+                  <h1 data-anim-child="slide-up delay-3" class="masthead__title">
+                    Master the Skills to<br>
+                    Drive your <span class="text-purple-1 underline">Career</span>
+                  </h1>
+                  <p data-anim-child="slide-up delay-4" class="masthead__text pt-15">
+                    Free online courses from the world’s leading experts.<br class="md:d-none">
+                    Join 17 million learners today
+                  </p>
+                  <div data-anim-child="slide-up delay-5" class="masthead__button row x-gap-20 y-gap-20 pt-30">
+                    <div class="col-auto"><a href="/signup" class="button -md -purple-1 -rounded text-white">Join For Free</a></div>
+                    <div class="col-auto"><a href="/courses_list?page=1" class="button -md -outline-dark-1 -rounded text-dark-1">Find Courses</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6">
+                <div data-anim-child="slide-up delay-6" class="masthead__image">
+                  <img src="user/img/home-5/masthead/bg.svg" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-pt-sm layout-pb-sm bg-light-6">
+          <div class="container">
+            <div class="row y-gap-30 justify-between sm:justify-start items-center">
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/1.svg" alt="clients image">
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/2.svg" alt="clients image">
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/3.svg" alt="clients image">
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/4.svg" alt="clients image">
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/5.svg" alt="clients image">
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-2 col-sm-3 col-4">
+                <div class="d-flex justify-center items-center px-4">
+                  <img class="w-1/1" src="user/img/clients/6.svg" alt="clients image">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-pt-lg layout-pb-md">
+          <div data-anim-wrap class="container">
+            <div class="tabs -pills js-tabs">
+              <div class="row y-gap-20 justify-between items-end">
+                <div class="col-auto">
+
+                  <div class="sectionTitle ">
+
+                    <h2 class="sectionTitle__title ">Explore Featured Courses</h2>
+
+                    <p class="sectionTitle__text ">10,000+ unique online course list designs</p>
+
+                  </div>
+
+                </div>
+                <div class="col-auto">
+
+                  <a href="/courses_list?page=1" class="button -icon -purple-3 text-purple-1">
+                    All courses
+                    <i class="icon-arrow-top-right text-13 ml-10"></i>
+                  </a>
+  
+                </div>
+              
+              </div>
+
+              <div class="tabs__content pt-60 lg:pt-50 js-tabs-content">
+
+                <div class="tabs__pane -tab-item-1 is-active">
+                  <div class="overflow-hidden js-section-slider" data-gap="30" data-slider-cols="xl-4 lg-3 md-2 sm-2">
+                    <div class="swiper-wrapper">
+<!--begin-->
+
+  <% if (data.length<= 0) {%>
+
+    No records to show!
+  
+  <% } else {%>
+  <% for(var i=0; i < data.length; i++) { %>
+    <div class="swiper-slide">
+      <div data-anim-child="slide-up delay-1">
+
+        <a href="/courses_single/<%= data[i].id_form %>" class="coursesCard -type-1 ">
+          <div class="relative">
+            <div class="coursesCard__image overflow-hidden rounded-8">
+              <img class="w-1/1" src="user/images/formation/<%= data[i].thubmnail %>" alt="image"  style="height:200px !important">
+              <div class="coursesCard__image_overlay rounded-8"></div>
+            </div>
+            <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
+
+            </div>
+          </div>
+
+          <div class="h-100 pt-15">
+            <div class="d-flex items-center">
+              <div class="text-14 lh-1 text-yellow-1 mr-10">4.5</div>
+              <div class="d-flex x-gap-5 items-center">
+                <div class="icon-star text-9 text-yellow-1"></div>
+                <div class="icon-star text-9 text-yellow-1"></div>
+                <div class="icon-star text-9 text-yellow-1"></div>
+                <div class="icon-star text-9 text-yellow-1"></div>
+                <div class="icon-star text-9 text-yellow-1"></div>
+              </div>
+              <div class="text-13 lh-1 ml-10">(1991)</div>
+            </div>
+
+            <div class="text-17 lh-15 fw-500 text-dark-1 mt-10"><%= data[i].nom_form %></div>
+
+            <div class="d-flex x-gap-10 items-center pt-10">
+
+              <div class="d-flex items-center">
+                <div class="mr-8">
+                  <img src="user/img/coursesCards/icons/1.svg" alt="icon">
+                </div>
+                <div class="text-14 lh-1"><%= data[i].nb_videos %> lesson</div>
+              </div>
+
+              <div class="d-flex items-center">
+                <div class="mr-8">
+                  <img src="user/img/coursesCards/icons/2.svg" alt="icon">
+                </div>
+                <div class="text-14 lh-1"><%= data[i].duree %></div>
+              </div>
+
+              <div class="d-flex items-center">
+                <div class="mr-8">
+                  <img src="user/img/coursesCards/icons/3.svg" alt="icon">
+                </div>
+                <div class="text-14 lh-1">Beginner</div>
+              </div>
+
+            </div>
+
+            <div class="coursesCard-footer">
+              <div class="coursesCard-footer__author">
+                <img src="/user/images/formateur/<%= data1[i].avatar %>" alt="image">
+                <div><%= data1[i].trainerName %></div>
+              </div>
+
+              <div class="coursesCard-footer__price">
+                <div>$ <%= data[i].prix %></div>
+                <div>$ <%= data[i].prix %></div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div> 
+                          <% } %>
+                          <% } %>
+  
+
+
+
+<!--end-->
+
+
+                      
+
+
+                    </div>
+
+
+                    <button class="section-slider-nav -prev -dark-bg-dark-2 -white -absolute size-70 rounded-full shadow-5 js-prev">
+                      <i class="icon icon-arrow-left text-24"></i>
+                    </button>
+
+                    <button class="section-slider-nav -next -dark-bg-dark-2 -white -absolute size-70 rounded-full shadow-5 js-next">
+                      <i class="icon icon-arrow-right text-24"></i>
+                    </button>
+
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-pt-md layout-pb-lg">
+          <div class="container">
+            <div class="row y-gap-20 justify-between items-end">
+              <div class="col-auto">
+
+                <div class="sectionTitle ">
+
+                  <h2 class="sectionTitle__title ">Top Categories</h2>
+
+                  <p class="sectionTitle__text ">10,000+ unique online course list designs</p>
+
+                </div>
+
+              </div>
+
+             
+            </div>
+
+            <div data-anim-wrap class="row y-gap-30 pt-50">
+
+              <div class="col-xl-3 col-md-6" data-anim-child="scale delay-1">
+                <a href="/courses_list?page=1&category=digital marketing" class="categoryCard -type-4">
+                  <div class="categoryCard__icon bg-light-3">
+                    <i class="icon icon-creative-announcement"></i>
+                  </div>
+                  <div class="categoryCard__content mt-10">
+                    <h4 class="categoryCard__title text-17 fw-500">Digital Marketing</h4>
+                    <div class="categoryCard__text text-13 text-light-1 lh-1 mt-5">573+ Courses</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xl-3 col-md-6" data-anim-child="scale delay-2">
+                <a href="/courses_list?page=1&category=web development" class="categoryCard -type-4">
+                  <div class="categoryCard__icon bg-light-3">
+                    <i class="icon icon-creative-web"></i>
+                  </div>
+                  <div class="categoryCard__content mt-10">
+                    <h4 class="categoryCard__title text-17 fw-500">Web Development</h4>
+                    <div class="categoryCard__text text-13 text-light-1 lh-1 mt-5">573+ Courses</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xl-3 col-md-6" data-anim-child="scale delay-3">
+                <a href="/courses_list?page=1&category=graphic design" class="categoryCard -type-4">
+                  <div class="categoryCard__icon bg-light-3">
+                    <i class="icon icon-creative-design"></i>
+                  </div>
+                  <div class="categoryCard__content mt-10">
+                    <h4 class="categoryCard__title text-17 fw-500">Graphic Design</h4>
+                    <div class="categoryCard__text text-13 text-light-1 lh-1 mt-5">573+ Courses</div>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="col-xl-3 col-md-6" data-anim-child="scale delay-7">
+                <a href="/courses_list?page=1&category=personal development" class="categoryCard -type-4">
+                  <div class="categoryCard__icon bg-light-3">
+                    <i class="icon icon-creative-personal"></i>
+                  </div>
+                  <div class="categoryCard__content mt-10">
+                    <h4 class="categoryCard__title text-17 fw-500">Personal Development</h4>
+                    <div class="categoryCard__text text-13 text-light-1 lh-1 mt-5">573+ Courses</div>
+                  </div>
+                </a>
+              </div>
+
+            
+
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-pt-lg layout-pb-lg bg-beige-1">
+          <div data-anim-wrap class="container">
+            <div data-anim-child="slide-left delay-1" class="row y-gap-20 justify-between items-center">
+              <div class="col-lg-6">
+
+                <div class="sectionTitle ">
+
+                  <h2 class="sectionTitle__title ">Learn from the best instructors</h2>
+
+                  <p class="sectionTitle__text ">Lorem ipsum dolor sit amet, consectetur.</p>
+
+                </div>
+
+              </div>
+
+              <div class="col-auto">
+
+                <a href="instructors-list-1.html" class="button -icon -purple-3 -rounded text-purple-1">
+                  View All Instructors
+                  <i class="icon-arrow-top-right text-13 ml-10"></i>
+                </a>
+
+              </div>
+            </div>
+
+            <div class="row y-gap-30 pt-50">
+
+              <div class="col-lg-3 col-sm-6">
+                <div data-anim-child="slide-left delay-2" class="teamCard -type-1 -teamCard-hover">
+                  <div class="teamCard__image">
+                    <img src="user/img/team/1.png" alt="image">
+                    <div class="teamCard__socials">
+                      <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
+                        <a href="#"><i class="icon-facebook text-white"></i></a>
+                        <a href="#"><i class="icon-twitter text-white"></i></a>
+                        <a href="#"><i class="icon-instagram text-white"></i></a>
+                        <a href="#"><i class="icon-linkedin text-white"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teamCard__content">
+                    <h4 class="teamCard__title">Floyd Miles</h4>
+                    <p class="teamCard__text">President of Sales</p>
+
+                    <div class="row items-center y-gap-10 x-gap-10 pt-10">
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-star text-yellow-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12 text-yellow-1 fw-500">4.5</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-online-learning text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">692 Students</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-play text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">15 Course</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div data-anim-child="slide-left delay-3" class="teamCard -type-1 -teamCard-hover">
+                  <div class="teamCard__image">
+                    <img src="user/img/team/2.png" alt="image">
+                    <div class="teamCard__socials">
+                      <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
+                        <a href="#"><i class="icon-facebook text-white"></i></a>
+                        <a href="#"><i class="icon-twitter text-white"></i></a>
+                        <a href="#"><i class="icon-instagram text-white"></i></a>
+                        <a href="#"><i class="icon-linkedin text-white"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teamCard__content">
+                    <h4 class="teamCard__title">Cameron Williamson</h4>
+                    <p class="teamCard__text">Web Designer</p>
+
+                    <div class="row items-center y-gap-10 x-gap-10 pt-10">
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-star text-yellow-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12 text-yellow-1 fw-500">4.5</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-online-learning text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">692 Students</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-play text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">15 Course</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div data-anim-child="slide-left delay-4" class="teamCard -type-1 -teamCard-hover">
+                  <div class="teamCard__image">
+                    <img src="user/img/team/3.png" alt="image">
+                    <div class="teamCard__socials">
+                      <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
+                        <a href="#"><i class="icon-facebook text-white"></i></a>
+                        <a href="#"><i class="icon-twitter text-white"></i></a>
+                        <a href="#"><i class="icon-instagram text-white"></i></a>
+                        <a href="#"><i class="icon-linkedin text-white"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teamCard__content">
+                    <h4 class="teamCard__title">Brooklyn Simmons</h4>
+                    <p class="teamCard__text">Dog Trainer</p>
+
+                    <div class="row items-center y-gap-10 x-gap-10 pt-10">
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-star text-yellow-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12 text-yellow-1 fw-500">4.5</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-online-learning text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">692 Students</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-play text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">15 Course</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div data-anim-child="slide-left delay-5" class="teamCard -type-1 -teamCard-hover">
+                  <div class="teamCard__image">
+                    <img src="user/img/team/4.png" alt="image">
+                    <div class="teamCard__socials">
+                      <div class="d-flex x-gap-20 y-gap-10 justify-center items-center h-100">
+                        <a href="#"><i class="icon-facebook text-white"></i></a>
+                        <a href="#"><i class="icon-twitter text-white"></i></a>
+                        <a href="#"><i class="icon-instagram text-white"></i></a>
+                        <a href="#"><i class="icon-linkedin text-white"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teamCard__content">
+                    <h4 class="teamCard__title">Wade Warren</h4>
+                    <p class="teamCard__text">Marketing Coordinator</p>
+
+                    <div class="row items-center y-gap-10 x-gap-10 pt-10">
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-star text-yellow-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12 text-yellow-1 fw-500">4.5</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-online-learning text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">692 Students</div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="d-flex items-center">
+                          <div class="icon-play text-light-1 text-11 mr-5"></div>
+                          <div class="text-14 lh-12">15 Course</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row justify-center text-center pt-60 lg:pt-40">
+              <div class="col-auto">
+                <p class="lh-1">Want to help people learn, grow and achieve more in life? <a class="text-purple-1 underline" href="instructors-become.html">Become an instructor</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-pt-lg layout-pb-lg">
+          <div data-anim-wrap class="container">
+            <div class="row justify-center text-center">
+              <div class="col-auto">
+
+                <div class="sectionTitle ">
+
+                  <h2 class="sectionTitle__title ">Start your Learning Journey Today!</h2>
+
+                  <p class="sectionTitle__text ">Lorem ipsum dolor sit amet, consectetur.</p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row y-gap-30 justify-between pt-60 lg:pt-50">
+
+              <div class="col-lg-3 col-md-6">
+                <div class="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
+                  <div class="coursesCard__image">
+                    <img src="user/img/home-5/learning/1.svg" alt="image">
+                  </div>
+                  <div class="coursesCard__content mt-30">
+                    <h5 class="coursesCard__title text-18 lh-1 fw-500">Learn with Experts</h5>
+                    <p class="coursesCard__text text-14 mt-10">Grursus mal suada faci lisis that ipsum ameti consecte.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
+                  <div class="coursesCard__image">
+                    <img src="user/img/home-5/learning/2.svg" alt="image">
+                  </div>
+                  <div class="coursesCard__content mt-30">
+                    <h5 class="coursesCard__title text-18 lh-1 fw-500">Learn Anything</h5>
+                    <p class="coursesCard__text text-14 mt-10">Grursus mal suada faci lisis that ipsum ameti consecte.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
+                  <div class="coursesCard__image">
+                    <img src="user/img/home-5/learning/3.svg" alt="image">
+                  </div>
+                  <div class="coursesCard__content mt-30">
+                    <h5 class="coursesCard__title text-18 lh-1 fw-500">Flexible Learning</h5>
+                    <p class="coursesCard__text text-14 mt-10">Grursus mal suada faci lisis that ipsum ameti consecte.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="coursesCard -type-2 text-center pt-50 pb-40 px-30 bg-white rounded-8">
+                  <div class="coursesCard__image">
+                    <img src="user/img/home-5/learning/4.svg" alt="image">
+                  </div>
+                  <div class="coursesCard__content mt-30">
+                    <h5 class="coursesCard__title text-18 lh-1 fw-500">Industrial Standart</h5>
+                    <p class="coursesCard__text text-14 mt-10">Grursus mal suada faci lisis that ipsum ameti consecte.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section class="layout-pt-lg layout-pb-md">
+          <div data-anim-wrap class="container">
+            <div class="row y-gap-20 justify-between items-center">
+              <div class="col-xl-6 col-lg-7">
+                <div data-anim-child="slide-up delay-1" class="app-image">
+                  <img src="user/img/home-5/apps/img.png" alt="image">
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="app-content">
+                  <h2 data-anim-child="slide-up delay-3" class="app-content__title">Learn From<br> <span>Anywhere</span></h2>
+                  <p data-anim-child="slide-up delay-4" class="app-content__text">Take classes on the go with the educrat app. Stream or download to watch on the plane, the subway, or wherever you learn best.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer -type-1 bg-purple-1">
+          <div class="container">
+            <div class="footer-header">
+              <div class="row y-gap-20 justify-between items-center">
+                <div class="col-auto">
+                  <div class="footer-header__logo">
+                  
+                    <img src="/user/images/logo/logo_dark.png" alt="logo" style="height:60px ;width:100px">
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="footer-header-socials">
+                    <div class="footer-header-socials__title text-white">Follow us on social media</div>
+                    <div class="footer-header-socials__list">
+                      <a href="#"><i class="icon-facebook"></i></a>
+                      <a href="#"><i class="icon-twitter"></i></a>
+                      <a href="#"><i class="icon-instagram"></i></a>
+                      <a href="#"><i class="icon-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-columns">
+              <div class="row y-gap-30">
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">ABOUT</div>
+                  <div class="d-flex y-gap-10 flex-column">
+                    <a href="about-1.html">About Us</a>
+                    <a href="blog-list-1.html">Learner Stories</a>
+                    <a href="instructor-become.html">Careers</a>
+                    <a href="blog-list-1.html">Press</a>
+                    <a href="#">Leadership</a>
+                    <a href="contact-1.html">Contact Us</a>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-8">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">CATEGORIES</div>
+                  <div class="row justify-between y-gap-20">
+                    <div class="col-md-6">
+                      <div class="d-flex y-gap-10 flex-column">
+                        <a href="courses-single-1.html">Development</a>
+                        <a href="courses-single-2.html">Business</a>
+                        <a href="courses-single-3.html">Finance & Accounting</a>
+                        <a href="courses-single-4.html">IT & Software</a>
+                        <a href="courses-single-5.html">Office Productivity</a>
+                        <a href="courses-single-6.html">Design</a>
+                        <a href="courses-single-1.html">Marketing</a>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="d-flex y-gap-10 flex-column">
+                        <a href="courses-single-1.html">Lifiestyle</a>
+                        <a href="courses-single-2.html">Photography & Video</a>
+                        <a href="courses-single-3.html">Health & Fitness</a>
+                        <a href="courses-single-4.html">Music</a>
+                        <a href="courses-single-5.html">UX Design</a>
+                        <a href="courses-single-6.html">Seo</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-2 offset-xl-1 col-lg-4 col-md-6">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">SUPPORT</div>
+                  <div class="d-flex y-gap-10 flex-column">
+                    <a href="terms.html">Documentation</a>
+                    <a href="help-center.html">FAQS</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="contact-1.html">Contact</a>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="text-17 fw-500 text-white uppercase mb-25">GET IN TOUCH</div>
+                  <div class="footer-columns-form">
+                    <div>We don’t send spam so don’t worry.</div>
+                    <form action="https://creativelayers.net/themes/educrat-html/post">
+                      <div class="form-group">
+                        <input type="text" placeholder="Email...">
+                        <button type="submit">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-30 border-top-light-15">
+              <div class="row justify-between items-center y-gap-20">
+                <div class="col-auto">
+                  <div class="d-flex items-center h-100 text-white">
+                    © 2022 Inspire. All Right Reserved.
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <div class="d-flex x-gap-20 y-gap-20 items-center flex-wrap">
+                    <div>
+                      <div class="d-flex x-gap-15 text-white">
+                        <a href="help-center.html">Help</a>
+                        <a href="terms.html">Privacy Policy</a>
+                        <a href="terms.html">Cookie Notice</a>
+                        <a href="terms.html">Security</a>
+                        <a href="terms.html">Terms of Use</a>
+                      </div>
+                    </div>
+
+                    <div>
+                      <a href="#" class="button px-30 h-50 -dark-6 rounded-200 text-white">
+                        <i class="icon-worldwide text-20 mr-15"></i><span class="text-15">English</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+      </div>
+    </main>
+  </div>
+  <!-- barba container end -->
+
+  <!-- JavaScript -->
+  <script src="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="user/js/vendors.js"></script>
+  <script src="user/js/main.js"></script>
+
+</body>
+
+
+<!-- Mirrored from creativelayers.net/themes/educrat-html/home-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 09:33:23 GMT -->
+</html>
